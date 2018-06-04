@@ -25,10 +25,9 @@ public class ElizaChatbot {
         int loopCount = 0;
         while (!(answer.equalsIgnoreCase("Q"))) {
 
-            if (loopCount == 6) {
-                System.out.print("It is getting late, maybe we had better quit."
-                        + " Enter your response here or Q to quit: ");
-                answer = keyboard.nextLine();
+            if (loopCount == 8) {
+                System.out.print("It is getting late, maybe we had better quit.");
+                break;
             } else {
                 if (random.nextInt(2) == 1) {
                     System.out.println(hedges[random.nextInt(hedges.length)]
